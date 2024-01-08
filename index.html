@@ -24,9 +24,9 @@
             <div class="nav-and-social">
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="" class="nav-link link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link link">How it’s made?</a></li>
-                        <li class="nav-item"><a href="" class="nav-link link">Chocolate is loved</a></li>
+                        <li class="nav-item"><a href="#hero" class="nav-link link">Home</a></li>
+                        <li class="nav-item"><a href="#made" class="nav-link link">How it’s made?</a></li>
+                        <li class="nav-item"><a href="#comments" class="nav-link link">Chocolate is loved</a></li>
                     </ul>
                 </nav>
     
@@ -211,10 +211,56 @@
             </div>
         </section>
 
-        <section></section>
+        <section class="comments" id="comments">
+            <div class="comments-div container">
+                <h2 class="comments-h"><span class="comments-span">chocolate</span> is loved</h2>
+                <ul class="comments-list">
+                    <li class="comments-item">
+                        <img src="./img/victoria.png" alt="victoria" class="comments-img">
+                        <h3 class="coments-item-h">Victoria Dobrzhanska</h3>
+                        <p class="comments-item-p">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+                    </li>
+                    <li class="comments-item">
+                        <img src="./img//nazar.png" alt="nazar" class="comments-img">
+                        <h3 class="coments-item-h">Nazar Babenko</h3>
+                        <p class="comments-item-p">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                    </li>
+                    <li class="comments-item">
+                        <img src="./img/olena.png" alt="olena" class="comments-img">
+                        <h3 class="coments-item-h">Olena Kampusch</h3>
+                        <p class="comments-item-p"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+                    </li>
+                </ul>
+                <button class="comments-btn" id="showFormBtn">Leave a review</button>
+            </div>              
+        </section>
     </main>
     <footer class="footer">
-
+        <div class="footer-div container">
+            <h2 class="footer-h"><span class="footer-h-span">Chocolate</span> a delicious cure for a bad day</h2>
+            <div class="footer-div-tab">
+                <h4 class="footer-h-contact">Contact us</h4>
+                <address class="footer-addr">
+                    <ul class="footer-addr-list">
+                        <li class="footer-addr-item"><a href="tel:+380684439426" class="footer-addr-link link">+380 (68) 443-94-26</a></li>
+                        <li class="footer-addr-item"><a href="mailto:simplychoc@gmail.com" class="footer-addr-link link">simplychoc@gmail.com</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-scnd-div">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="#hero" class="footer-nav-link link">Home</a></li>
+                    <li class="footer-nav-item"><a href="#made" class="footer-nav-link link">How it’s made?</a></li>
+                    <li class="footer-nav-item"><a href="#sensation" class="footer-nav-link link">Our products</a></li>
+                    <li class="footer-nav-item"><a href="#about" class="footer-nav-link link">Top sellers</a></li>
+                    <li class="footer-nav-item"><a href="#comments" class="footer-nav-link link">Chocolate is loved</a></li>
+                </ul>
+                <form action="" class="footer-form">
+                    <input type="email" class="footer-form-input" placeholder="Enter your email" required>
+                    <button class="footer-form-btn" type="submit">Subscribe</button>
+                </form>
+            </div>   
+        </div>
     </footer>
 
     <div class="header-menu" id="myDiv">
@@ -224,9 +270,9 @@
                 </svg>
             </button>
         <ul class="menu-list list">
-            <li class="menu-item"><a href="" class="menu-link link">Home</a></li>
-            <li class="menu-item"><a href="" class="menu-link link">How it’s made?</a></li>
-            <li class="menu-item"><a href="" class="menu-link link">Chocolate is loved</a></li>
+            <li class="menu-item"><a href="#hero" class="menu-link link">Home</a></li>
+            <li class="menu-item"><a href="#made" class="menu-link link">How it’s made?</a></li>
+            <li class="menu-item"><a href="#comments" class="menu-link link">Chocolate is loved</a></li>
         </ul>
         <ul class="menu-list-social list">
             <li class="menu-social-item"><a href="" class="menu-social-link link"><svg class="social-svg" width="22" height="22">
@@ -236,6 +282,61 @@
                 <use href="./img/sprite.svg#twitter"></use>
             </svg></a></li>
         </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="leave" id="formContainer">
+        <h2 class="leave-h">LEAVE A REVIEW ABOUT <span class="leave-span">OUR CHOCOLATE</span></h2>
+        <button class="leave-close" id="closeButton">
+            <svg class="leave-svg" width="28" height="28">
+                <use href="./img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <form class="my-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <div class="input-with-icon">
+                <input type="text" id="name" name="name" class="form-input" required>
+                <svg class="form-svg">
+                  <use href="./img/sprite.svg#user"></use>
+                </svg>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-with-icon">
+                <input type="email" id="email" name="email" class="form-input" required>
+                <svg class="form-svg">
+                  <use href="./img/sprite.svg#mail"></use>
+                </svg>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <div class="input-with-icon">
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+                <svg class="form-svg">
+                  <use href="./img/sprite.svg#phone"></use>
+             </svg>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label for="comment">Comment</label>
+              <textarea type="text" id="comment" name="comment" placeholder="Enter text" class="form-input last-input" required></textarea>
+            </div>
+          
+            <div class="form-group privacy-div">
+              <input type="checkbox" id="terms" name="terms">
+              <label for="terms" class="privacy-label">I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a></label>
+            </div>
+          
+            <button type="submit" class="send-btn">Send</button>
+          </form>
+        
     </div>
 </body>
 </html>
